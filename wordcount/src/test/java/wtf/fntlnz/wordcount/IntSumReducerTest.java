@@ -16,10 +16,10 @@ public class IntSumReducerTest {
         ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver;
         reduceDriver = ReduceDriver.newReduceDriver(reducer);
         List<IntWritable> exampleValues = new ArrayList<IntWritable>();
-        exampleValues.add(new IntWritable(10));
-        exampleValues.add(new IntWritable(30));
+        exampleValues.add(new IntWritable(1));
+        exampleValues.add(new IntWritable(1));
         reduceDriver.withInput(new Text("example"), exampleValues);
-        reduceDriver.withOutput(new Text("example"), new IntWritable(40));
+        reduceDriver.withOutput(new Text("example"), new IntWritable(2));
         reduceDriver.runTest();
     }
 }

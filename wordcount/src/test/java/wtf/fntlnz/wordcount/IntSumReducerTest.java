@@ -1,7 +1,5 @@
 package wtf.fntlnz.wordcount;
 
-import junit.framework.TestCase;
-
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
@@ -11,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IntSumReducerTest extends TestCase {
+public class IntSumReducerTest {
     @Test
     public void testReduce() throws IOException {
         IntSumReducer reducer = new IntSumReducer();
